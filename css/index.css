@@ -16,19 +16,42 @@ aside, main{
     overflow: hidden;
     overflow-y: scroll;
 }
+
 .main-content{
     margin: 30px;
 }
+
 main nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+main nav .logo{
+    width: 20px;
+    overflow: hidden;
+}
+
+main nav .logo > img{
+    width: inherit;
+}
+
+main nav .menu--disabled{
+    display: none;
+}
+
+main nav .menu-btn{
+    margin-top: 0;
+    padding-right: 0;
+    border: none;
+}
+
 main nav li{
     display: inline;
     margin-right: 15px;
 }
 .slideshow{
-    height: fit-content;
+    /* height: fit-content; */
     width: 100%;
     margin-top: 15px;
     overflow: hidden;

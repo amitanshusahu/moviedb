@@ -8,6 +8,11 @@
 .menu menu li{
     list-style: none;
     font-size: 14px;
+    width: 100%;
+}
+
+.menu menu li:has(a[active]){
+    border-right: 5px solid red;
 }
 
 .menu{
@@ -16,4 +21,59 @@
 
 .search{
     border-left: 1px solid gray;
+}
+
+.search #search-box{
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid grey;
+}
+
+.search #search-box::placeholder{
+    font-weight: bold;
+    color: gainsboro;
+}
+
+.search #search-box:focus{
+    outline: 1px solid white;
+}
+
+.search .vertical-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.vertical-box .card-hl{
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.card-hl > img{
+    height: inherit;
+    border-radius: 10px;
+}
+
+.card-hl .description{
+    flex-direction: column;
+}
+
+.card-hl .description h5 + p{
+    font-size: 14px;
+    color: grey;
+}
+
+.card-hl .description .rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-hl .description .rating > img{
+    height: 20px;
 }

@@ -16,9 +16,6 @@ a{
 a[active]{
     color: white;
 }
-li[hidden]{
-    display: none;
-}
 button{
     background-color:red;
     color: white;
@@ -30,14 +27,17 @@ button{
     border-radius: 10px;
     margin-top: 15px;
     cursor: pointer;
+    border: 2px solid red;
 }
 .add , .left , .right{
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(2px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
     cursor: pointer;
 }
-
+.btn-l{
+    border-radius: 7px;
+}
 /* utility classes  */
 .m15{
     margin-top: 15px;
@@ -45,6 +45,9 @@ button{
 .flex-between{
     display: flex;
     justify-content: space-between;
+}
+.hidden{
+    display: none;
 }
 
 /* icons */

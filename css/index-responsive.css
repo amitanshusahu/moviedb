@@ -2,4 +2,40 @@
     body {
       grid-template-columns: 0% 100% 0%;
     }
+    .main-content{
+        margin: 20px;
+    }
+    main nav .menu--active{
+        display: inline;
+    }
+    .slide .banner-description{
+        padding: 20px;
+    }
+    .banner-description .description{
+        font-size: 23px;
+    }
+    .description + p{
+        font-size: 14px;
+    }
+    .m15{
+        margin-top: 10px;
+    }
+    button{
+        margin-top: 10px;
+    }
+    .horizontal-scroll-holder .horizontal-scroll{
+        gap: 0px;
+    }
+    .card{
+        scale:0.85;
+    }
+    .card .add{
+        margin: 10px;
+    }
+    a{
+        font-size: 14px;
+    }
+    a[active]{
+        font-weight: bold;
+    }
   }
