@@ -1,0 +1,19 @@
+.menu menu .main{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: gainsboro;
+}
+
+.menu menu li{
+    list-style: none;
+    font-size: 14px;
+}
+
+.menu{
+    border-right: 1px solid gray;
+}
+
+.search{
+    border-left: 1px solid gray;
+}

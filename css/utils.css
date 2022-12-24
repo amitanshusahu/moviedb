@@ -1,0 +1,53 @@
+/*----- IMPORTS ---- */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&family=Ubuntu:wght@300&display=swap');
+
+/* -----styles---- */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+}
+
+a{
+    color: grey;
+}
+
+a[active]{
+    color: white;
+}
+li[hidden]{
+    display: none;
+}
+button{
+    background-color:red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.add , .left , .right{
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+/* utility classes  */
+.m15{
+    margin-top: 15px;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* icons */
+.fa{
+    margin-right: 10px;
+}
