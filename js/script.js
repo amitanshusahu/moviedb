@@ -1,7 +1,7 @@
 let loader = document.querySelector(".loading");
 setTimeout(()=>{
 loader.style.display = "none";
-}, 5000)
+}, 1500)
 
 // dom elements
 let body = document.getElementById("body");
@@ -36,7 +36,8 @@ let slideshow = document.querySelector(".slideshow")
 let slideMaxNo = slideData.length;
 let index = 0;
 function next(){
-    if(index != slideMaxNo){
+    if(index != slideMaxNo-1){
+        index++;
         slideshow.innerHTML= `
         <div class="slide">
             <img src="${slideData[index].imgsrc}" alt="">
@@ -46,13 +47,28 @@ function next(){
                 <button class="m15">Watch</button>
                 <button class="add" > + </button>
             </div>
-            <button class="add" id="swipe" onclick="next()">&#62</button>
+            <button class="right" id="swipe" onclick="next()">&#62</button>
+        </div>
+    `
+    }else{
+        index = 0;
+        slideshow.innerHTML= `
+        <div class="slide">
+            <img src="${slideData[index].imgsrc}" alt="">
+            <div class="banner-description">
+                <h2 class="description">${slideData[index].name}</h2>
+                <p>${slideData[index].tags}</p>
+                <button class="m15">Watch</button>
+                <button class="add" > + </button>
+            </div>
+            <button class="right" id="swipe" onclick="next()">&#62</button>
         </div>
     `
     }
 }
 function slideShow(){
     console.log(slideMaxNo)
+    index++;
     if(index == slideMaxNo){
         index= 0;
         slideshow.innerHTML= `
@@ -64,7 +80,7 @@ function slideShow(){
                 <button class="m15">Watch</button>
                 <button class="add" > + </button>
             </div>
-            <button class="add" id="swipe" onclick="next()">&#62</button>
+            <button class="right" id="swipe" onclick="next()">&#62</button>
         </div>
     `
     }
@@ -78,14 +94,16 @@ function slideShow(){
                 <button class="m15">Watch</button>
                 <button class="add"> + </button>
             </div>
-            <button class="add" id="swipe" onclick="next()">&#62</button>
+            <button class="right" id="swipe" onclick="next()">&#62</button>
         </div>
     `
     }
-    index++;
     setTimeout(slideShow , 5000)
 
 }
 
 
-slideShow()
+slideShow();
+
+let slideShowHeight = slideshow.clientHeight;
+slideshow.style.height = slideShowHeight;

@@ -2,12 +2,12 @@
     margin-top: 30px;
     margin-bottom: 20px;
     font-weight: bold;
-    color: gainsboro;
+    color: rgb(200,200,200);
 }
 
 .menu menu li{
     list-style: none;
-    font-size: 14px;
+    font-size: 16px;
     width: 100%;
 }
 
@@ -45,11 +45,12 @@
     background-color: transparent;
     color: white;
     border: 2px solid grey;
+    font-size: 16px;
 }
 
 .search #search-box::placeholder{
     font-weight: bold;
-    color: gainsboro;
+    color: white;
 }
 
 .search #search-box:focus{
@@ -80,7 +81,7 @@
 
 .card-hl .description h5 + p{
     font-size: 14px;
-    color: grey;
+    color: rgb(200,200,200);
 }
 
 .card-hl .description .rating {
@@ -105,26 +106,16 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    animation: fade  5s ease-in ;
+    animation: fade  1s ease-in ;
 }
 
 .loading svg{
     width: 15vw;
 }
-svg #white-circle{
-    transform-origin: center;
-    animation: rotate 10s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s;
-}
-
-svg #red-circle{
+svg{
     animation: scale 4s ease-in 1s;
     animation: rotate 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transform-origin: center;
-
-}
-
-svg #rect848{
-    animation: translate 4s ease;
 }
 
 @keyframes rotate {
@@ -135,11 +126,6 @@ svg #rect848{
 @keyframes scale {
     from{transform: scale(1.1);}
     to{transform: scale(1);}
-}
-
-@keyframes translate{
-    from{transform: translateX("-10px");}
-    to{transform: translateX("-5px")}
 }
 
 @keyframes fade {

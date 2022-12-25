@@ -6,7 +6,7 @@ body{
     grid-template-columns: 25% 50% 25%;
     width: 100%;
     height: 100vh;
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(25, 25, 25);
     color: white;
 }
 /* body *{
@@ -50,7 +50,7 @@ main nav .logo > img{
 
 main nav .menu-btn{
     margin-top: 0;
-    padding-right: 0;
+    padding-top: 5px;
     border: none;
 }
 
@@ -63,11 +63,15 @@ main nav li{
     margin-top: 15px;
     overflow: hidden;
     border-radius: 30px;
-    transition: 0.5s ease-in-out;
 }
 
 .slide, .slide img{
     width: inherit;
+    cursor: pointer;
+    transition: scale 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.slide img{
+    scale: 1.05;
 }
 .slide{
     position: relative;
@@ -112,6 +116,7 @@ section .horizontal-scroll-holder{
     gap: 15px;
 }
 .card{
+    cursor: pointer;
     overflow: hidden;
     width: 200px;
     height: 250px;
@@ -154,13 +159,8 @@ section .horizontal-scroll-holder{
 }
 
 @media(hover: hover){
-    .card:hover > img{
-        scale: 1.1;
-    }
-    .slideshow:hover{
-        filter: drop-shadow(0.5px 0.5px 10px rgba(255, 255, 255, 0.5));
-    }
-    .slideshow:hover .add{
+    .card:hover > img,
+    .slideshow:hover  img{
         scale: 1.1;
     }
 }

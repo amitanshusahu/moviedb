@@ -11,29 +11,41 @@ main{
     scroll-behavior: smooth;
 }
 a{
-    color: grey;
+    color: rgb(200,200,200);
 }
 a[active]{
     color: white;
+    transition: color 0.2s ease-in-out;
 }
 button{
     background-color:red;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     padding: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     border-radius: 10px;
     margin-top: 15px;
     cursor: pointer;
     border: 2px solid red;
+    height: 40px;
 }
 .add , .left , .right{
+    opacity: 0.7;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(2px);
     border: 2px solid rgba(255, 255, 255, 0.3);
     cursor: pointer;
+}
+.add{
+    background-color: rgba(255, 0, 0, 0.2);
+    border-color: 2px solid rgba(255, 0, 0, 0.3);
+    font-size: 23px;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    width:35px;
+    height: 35px;
 }
 .btn-l{
     border-radius: 7px;
@@ -45,17 +57,19 @@ button{
     font-size: 14px;
     border-radius:7px;
 }
+.feather{
+    height: 16px;
+}
 main::-webkit-scrollbar-thumb{
     background-color: blue;
     width: 2px;
 }
 @media(hover: hover){
     button:hover{
-        scale: 1.05;
+        opacity: 1;
     }
     a:hover{
         color: white;
-        transition: color 0.5s ease-in-out;
     }
 }
 /* utility classes  */
@@ -66,11 +80,10 @@ main::-webkit-scrollbar-thumb{
     display: flex;
     justify-content: space-between;
 }
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
 .hidden{
     display: none;
-}
-
-/* icons */
-.fa{
-    margin-right: 10px;
 }
