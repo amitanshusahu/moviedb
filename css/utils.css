@@ -32,13 +32,13 @@ button{
     height: 40px;
 }
 .add , .left , .right{
-    opacity: 0.7;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(2px);
     border: 2px solid rgba(255, 255, 255, 0.3);
     cursor: pointer;
 }
 .add{
+    opacity: 0.7;
     background-color: rgba(255, 0, 0, 0.2);
     border-color: 2px solid rgba(255, 0, 0, 0.3);
     font-size: 23px;
@@ -52,10 +52,11 @@ button{
 }
 .back{
     background-color: rgba(255, 255, 255, 0.08);
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
     font-size: 14px;
     border-radius:7px;
+    font-weight: bold;
 }
 .feather{
     height: 16px;
@@ -72,6 +73,9 @@ main::-webkit-scrollbar-thumb{
         color: white;
     }
 }
+::selection{
+    background-color: red;
+}
 /* utility classes  */
 .m15{
     margin-top: 15px;
@@ -86,4 +90,8 @@ main::-webkit-scrollbar-thumb{
 }
 .hidden{
     display: none;
+}
+#op1{
+    opacity: 1;
+    font-weight: bold;
 }
