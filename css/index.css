@@ -16,6 +16,14 @@ aside, main{
     overflow: hidden;
     overflow-y: scroll;
 }
+main::-webkit-scrollbar,
+main::-webkit-scrollbar-thumb,
+main::-webkit-scrollbar-button,
+aside::-webkit-scrollbar,
+aside::-webkit-scrollbar-thumb,
+aside::-webkit-scrollbar-button{
+    display: none;
+}
 
 .main-content{
     margin: 30px;
@@ -36,7 +44,7 @@ main nav .logo > img{
     width: inherit;
 }
 
-main nav .menu--disabled{
+.menu--disabled{
     display: none;
 }
 
@@ -51,11 +59,11 @@ main nav li{
     margin-right: 15px;
 }
 .slideshow{
-    /* height: fit-content; */
     width: 100%;
     margin-top: 15px;
     overflow: hidden;
     border-radius: 30px;
+    transition: 0.5s ease-in-out;
 }
 
 .slide, .slide img{
@@ -63,6 +71,11 @@ main nav li{
 }
 .slide{
     position: relative;
+}
+.slide #swipe{
+    position: absolute;
+    right: 15px;
+    top: 40%;
 }
 .slide .banner-description{
     position: absolute;
@@ -76,11 +89,21 @@ main nav li{
 .description + p{
     font-size: 14px;
 }
+section .section-name{
+    align-items: center;
+}
 section .horizontal-scroll-holder{
     width: 100%;
     height: fit-content;
     overflow: hidden;
     overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.horizontal-scroll-holder::-webkit-scrollbar,
+.horizontal-scroll-holder::-webkit-scrollbar-thumb,
+.horizontal-scroll-holder::-webkit-scrollbar-button{
+    display: none;
 }
 .horizontal-scroll-holder .horizontal-scroll{
     width: fit-content;
@@ -94,6 +117,7 @@ section .horizontal-scroll-holder{
     height: 250px;
     position: relative;
     border-radius: 20px;
+    scroll-snap-align: start;
 }
 .card::before{
     content: " ";
@@ -109,6 +133,7 @@ section .horizontal-scroll-holder{
 .card img{
     width: inherit;
     height: inherit;
+    transition: scale 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .card .description-holder{
     position: absolute; 
@@ -126,4 +151,16 @@ section .horizontal-scroll-holder{
     right: 0;
     margin: 15px;
     z-index: 10;
+}
+
+@media(hover: hover){
+    .card:hover > img{
+        scale: 1.1;
+    }
+    .slideshow:hover{
+        filter: drop-shadow(0.5px 0.5px 10px rgba(255, 255, 255, 0.5));
+    }
+    .slideshow:hover .add{
+        scale: 1.1;
+    }
 }

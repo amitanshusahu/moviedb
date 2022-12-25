@@ -19,6 +19,21 @@
     border-right: 1px solid gray;
 }
 
+.menu a[active] > i{
+    font-weight: bold;
+    color: red;
+}
+
+.menu .logo-holder{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu .logo-holder #logo{
+    width: 2rem;
+}
+
 .search{
     border-left: 1px solid gray;
 }
@@ -76,4 +91,58 @@
 
 .card-hl .description .rating > img{
     height: 20px;
+}
+
+.loading {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fade  5s ease-in ;
+}
+
+.loading svg{
+    width: 15vw;
+}
+svg #white-circle{
+    transform-origin: center;
+    animation: rotate 10s cubic-bezier(0.47, 0, 0.745, 0.715) 0.3s;
+}
+
+svg #red-circle{
+    animation: scale 4s ease-in 1s;
+    animation: rotate 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: center;
+
+}
+
+svg #rect848{
+    animation: translate 4s ease;
+}
+
+@keyframes rotate {
+    from{transform: rotateZ(0deg);}
+    to{transform: rotateZ(360deg);}
+}
+
+@keyframes scale {
+    from{transform: scale(1.1);}
+    to{transform: scale(1);}
+}
+
+@keyframes translate{
+    from{transform: translateX("-10px");}
+    to{transform: translateX("-5px")}
+}
+
+@keyframes fade {
+    from{opacity: 1;}
+    to{opacity: 0;}
 }

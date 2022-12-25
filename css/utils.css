@@ -1,6 +1,5 @@
 /*----- IMPORTS ---- */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&family=Ubuntu:wght@300&display=swap');
-
 /* -----styles---- */
 *{
     margin: 0;
@@ -8,11 +7,12 @@
     text-decoration: none;
     font-family: 'DM Sans', sans-serif;
 }
-
+main{
+    scroll-behavior: smooth;
+}
 a{
     color: grey;
 }
-
 a[active]{
     color: white;
 }
@@ -37,6 +37,26 @@ button{
 }
 .btn-l{
     border-radius: 7px;
+}
+.back{
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius:7px;
+}
+main::-webkit-scrollbar-thumb{
+    background-color: blue;
+    width: 2px;
+}
+@media(hover: hover){
+    button:hover{
+        scale: 1.05;
+    }
+    a:hover{
+        color: white;
+        transition: color 0.5s ease-in-out;
+    }
 }
 /* utility classes  */
 .m15{

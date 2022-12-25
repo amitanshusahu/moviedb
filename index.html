@@ -9,11 +9,41 @@
     <link rel="stylesheet" href="./css/index-responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body id="body">
+    <!-- splash loading -->
+    <div class="loading">
+        <svg width="794" height="1123" viewBox="0 0 794 1123" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="moviedb 1">
+            <g id="layer1">
+            <g id="red-circle">
+            <path id="rect848" d="M662.143 800.281H395.81C382.568 800.281 371.834 811.016 371.834 824.258C371.834 837.499 382.568 848.234 395.81 848.234H662.143C675.385 848.234 686.119 837.499 686.119 824.258C686.119 811.016 675.385 800.281 662.143 800.281Z" fill="#FF0000" fill-opacity="0.996721"/>
+            <path id="path815" d="M237.673 264.195C309.086 221.049 394.711 208.03 475.721 227.998C556.73 247.967 626.495 299.289 669.675 370.681C712.855 442.073 725.916 527.691 705.986 608.711C686.057 689.731 634.769 759.52 563.397 802.734C492.026 845.949 406.415 859.051 325.385 839.161C244.356 819.271 174.542 768.016 131.293 696.666C88.044 625.316 74.8999 539.711 94.7508 458.672C114.602 377.633 165.823 307.794 237.152 264.511" fill="#FF0000" fill-opacity="0.996721"/>
+            </g>
+            <g id="white-circle">
+            <path id="circle" d="M382.422 276.565C400.344 265.737 421.833 262.469 442.164 267.481C462.494 272.492 480.003 285.372 490.839 303.289C501.676 321.206 504.954 342.693 499.952 363.026C494.951 383.36 482.079 400.874 464.168 411.72C446.256 422.565 424.77 425.853 404.435 420.861C384.099 415.87 366.579 403.007 355.725 385.1C344.87 367.194 341.572 345.71 346.554 325.372C351.536 305.034 364.39 287.507 382.291 276.644" fill="white" fill-opacity="0.996721"/>
+            <path id="circle_2" d="M611.833 391.55C630.172 401.657 643.746 418.633 649.571 438.746C655.397 458.858 652.996 480.461 642.898 498.804C632.8 517.148 615.83 530.73 595.721 536.565C575.611 542.4 554.007 540.01 535.659 529.921C517.311 519.832 503.72 502.869 497.875 482.762C492.031 462.655 494.41 441.05 504.49 422.697C514.571 404.344 531.527 390.745 551.631 384.89C571.735 379.036 593.341 381.405 611.699 391.476" fill="white" fill-opacity="0.996721"/>
+            <path id="circle_3" d="M626.959 647.718C627.375 668.654 619.461 688.897 604.955 703.998C590.45 719.099 570.541 727.822 549.606 728.248C528.672 728.675 508.424 720.77 493.316 706.272C478.208 691.774 469.476 671.869 469.039 650.935C468.603 630 476.498 609.749 490.988 594.634C505.479 579.519 525.379 570.777 546.314 570.33C567.248 569.883 587.503 577.769 602.625 592.252C617.748 606.735 626.499 626.631 626.956 647.566" fill="white" fill-opacity="0.996721"/>
+            <path id="circle-center" d="M363.997 473.283C379.975 463.63 399.131 460.717 417.255 465.185C435.379 469.652 450.987 481.134 460.648 497.107C470.309 513.079 473.231 532.234 468.772 550.36C464.313 568.487 452.839 584.1 436.871 593.769C420.903 603.437 401.749 606.368 383.621 601.918C365.493 597.468 349.873 586.001 340.197 570.038C330.521 554.075 327.581 534.923 332.022 516.792C336.463 498.662 347.922 483.037 363.881 473.353" fill="white" fill-opacity="0.996721"/>
+            <path id="circle_4" d="M412.673 788.902C394.751 799.73 373.263 802.997 352.932 797.986C332.601 792.975 315.093 780.094 304.256 762.178C293.42 744.261 290.142 722.773 295.143 702.44C300.145 682.107 313.016 664.593 330.928 653.747C348.84 642.902 370.325 639.614 390.661 644.605C410.996 649.597 428.517 662.46 439.371 680.367C450.225 698.273 453.524 719.757 448.542 740.095C443.56 760.433 430.706 777.96 412.804 788.823" fill="white" fill-opacity="0.996721"/>
+            <path id="circle_5" d="M183.262 673.917C164.924 663.81 151.35 646.834 145.524 626.721C139.699 606.609 142.099 585.006 152.198 566.663C162.296 548.319 179.265 534.737 199.375 528.902C219.485 523.067 241.089 525.457 259.437 535.546C277.785 545.635 291.376 562.598 297.22 582.705C303.065 602.812 300.686 624.417 290.605 642.77C280.525 661.123 263.569 674.722 243.465 680.577C223.36 686.431 201.754 684.062 183.396 673.991" fill="white" fill-opacity="0.996721"/>
+            <path id="circle_6" d="M168.137 417.748C167.72 396.813 175.635 376.57 190.14 361.469C204.646 346.368 224.554 337.645 245.489 337.219C266.424 336.792 286.671 344.697 301.78 359.195C316.888 373.693 325.62 393.597 326.057 414.532C326.493 435.467 318.598 455.718 304.107 470.833C289.617 485.948 269.716 494.69 248.782 495.137C227.848 495.584 207.593 487.698 192.47 473.215C177.348 458.732 168.597 438.836 168.14 417.901" fill="white" fill-opacity="0.996721"/>
+            </g>
+            </g>
+            </g>
+        </svg>
+        <h1 style=" font-size: 10vw">Movie DB</h1>
+    </div>
+
     <!-- aside navigation -->
     <aside class="menu">
         <div class="main-content">
-            <img src="" alt="logo">
+            <div class="flex-between">
+                <div class="logo-holder">
+                    <img src="assert/img/moviedb-logo.png" id="logo" alt="logo">
+                    <b>Movie DB</b>
+                </div>
+                <span class="menu--disabled menu--active back" onclick="closeMenu()">Back <i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+            </div>
 
             <menu>
                 <li class="main">MENU</li>
@@ -40,33 +70,25 @@
         <div class="main-content">
             <!-- navigation  -->
         <nav>
-            <button class="menu-btn menu--disabled menu--active add" >
+            <button class="menu-btn menu--disabled menu--active add" onclick="openLeftMenu()">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
             <menu>
                 <li class="menu--disabled menu--active logo" >
-                    <img src="assert/img/imdb-logo.png" alt="Movie DB">
+                    <img src="assert/img/moviedb-logo.png" alt="Movie DB">
                 </li>
                 <li><a href="">Tv Shows</a></li>
                 <li><a href="" active >Movies</a></li>
-                <li><a href="">Animes</a></li>
+                <li><a href="#anime">Animes</a></li>
             </menu>
-            <button class="menu-btn menu--disabled menu--active add" >
+            <button class="menu-btn menu--disabled menu--active add" onclick="openRightMenu()">
                 <i class="fa fa-search" aria-hidden="true"></i>
             </button>
         </nav>
 
         <!-- slide show  -->
         <div class="slideshow">
-            <div class="slide">
-                <img src="./assert/img/banners1920X1080/deadpool.jpg" alt="">
-                <div class="banner-description">
-                    <h2 class="description">DEADPOOL 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita harum fuga asperiore</p>
-                    <button class="m15">Watch</button>
-                    <button class="add"> + </button>
-                </div>
-            </div>
+            <!-- slide -->
         </div>
 
         <section class="m15">
@@ -74,8 +96,8 @@
             <div class="section-name flex-between">
                 <h3 class="m15">Movies for you</h3>
                 <div>
-                    <button class="left">&#60</button>
-                    <button class="right">&#62</button>
+                    <button class="left" onclick="swipeLeft(0)">&#60</button>
+                    <button class="right" onclick="swipeRight(0)">&#62</button>
                 </div>
             </div>
             <!-- horizontal scroll  -->
@@ -123,10 +145,118 @@
         <section class="m15">
             <!-- section heading  -->
             <div class="section-name flex-between">
+                <h3 class="m15">New releases</h3>
+                <div>
+                    <button class="left" onclick="swipeLeft(1)">&#60</button>
+                    <button class="right" onclick="swipeRight(1)">&#62</button>
+                </div>
+            </div>
+
+            <!-- horizontal scroll  -->
+            <div class="horizontal-scroll-holder m15">
+                <div class="horizontal-scroll">
+                        <!-- card -->
+                    <div class="card">
+                        <img src="./assert/img/posters1080X1350/mXei1Oxp.jpeg" alt="movies-image">
+                        <div class="description-holder">
+                            <h4 class="description">Tomorrow Land</h4>
+                            <p>5 star rateings</p>
+                        </div>
+                        <button class="add">+</button>
+                    </div>
+                    <!-- card -->
+                    <div class="card">
+                        <img src="./assert/img/posters1080X1350/aoep.jpeg" alt="movies-image">
+                        <div class="description-holder">
+                            <h4 class="description">Black Swan</h4>
+                            <p>star ratings</p>
+                        </div>
+                        <button class="add">+</button>
+                    </div>
+                    <!-- card -->
+                    <div class="card">
+                        <img src="./assert/img//posters1080X1350/Seven.jpeg" alt="movies-image">
+                        <div class="description-holder">
+                            <h4 class="description">Seven ( 2022 )</h4>
+                            <p>star ratings</p>
+                        </div>
+                        <button class="add">+</button>
+                    </div>
+                    <!-- card -->
+                    <div class="card">
+                        <img src="./assert/img/posters1080X1350/superman.jpeg" alt="movies-image">
+                        <div class="description-holder">
+                            <h4 class="description">Superman Here</h4>
+                            <p>ratings</p>
+                        </div>
+                        <button class="add">+</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="m15">
+            <!-- section heading  -->
+            <div class="section-name flex-between">
+                <h3 class="m15" id="anime">Top animes</h3>
+                <div>
+                    <button class="left" onclick="swipeLeft(2)">&#60</button>
+                    <button class="right" onclick="swipeRight(2)">&#62</button>
+                </div>
+            </div>
+
+            <!-- horizontal scroll  -->
+            <div class="horizontal-scroll-holder m15">
+                <div class="horizontal-scroll">
+                        <!-- card -->
+                    <div class="card">
+                        <img src="./assert/img/posters1080X1350/Cloak & Dagger.jpeg" alt="movies-image">
+                        <div class="description-holder">
+                            <h4 class="description">Cloak & Dagger</h4>
+                            <p>5 star rateings</p>
+                        </div>
+                        <button class="add">+</button>
+                    </div>
+                    <!-- card -->
+                    <div class="card">
+                        <img src="./assert/img//posters1080X1350/Inosuke.png" alt="movies-image">
+                        <div class="description-holder">
+                            <h4 class="description">Demon Slayer Inosuke</h4>
+                            <p>star ratings</p>
+                        </div>
+                        <button class="add">+</button>
+                    </div>
+                    <!-- card -->
+                    <div class="card">
+                        <img src="./assert/img/posters1080X1350/one-peice.png" alt="movies-image">
+                        <div class="description-holder">
+                            <h4 class="description">One Peice Movie</h4>
+                            <p>star ratings</p>
+                        </div>
+                        <button class="add">+</button>
+                    </div>
+                    <!-- card -->
+                    <div class="card">
+                        <img src="./assert/img/posters1080X1350/Naruto.jpeg" alt="movies-image">
+                        <div class="description-holder">
+                            <h4 class="description">Naruto Seriese</h4>
+                            <p>ratings</p>
+                        </div>
+                        <button class="add">+</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="m15">
+            <!-- section heading  -->
+            <div class="section-name flex-between">
                 <h3 class="m15">Best artists</h3>
                 <div>
-                    <button class="left">&#60</button>
-                    <button class="right">&#62</button>
+                    <button class="left" onclick="swipeLeft(3)">&#60</button>
+                    <button class="right" onclick="swipeRight(3)">&#62</button>
                 </div>
             </div>
 
@@ -179,6 +309,7 @@
     <!-- aside serch -->
     <aside class="search">
         <div class="main-content">
+            <div class="menu--disabled menu--active back" onclick="closeMenu()"><i class="fa fa-angle-double-left" aria-hidden="true"> Back</i></div>
             <input type="search" name="" id="search-box" placeholder="Search">
 
             <!-- movie box -->
@@ -290,4 +421,6 @@
         </div>
     </aside>
 </body>
+<script src="./js/slideData.js"></script>
+<script src="./js/script.js" async defer></script>
 </html>

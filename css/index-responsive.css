@@ -5,7 +5,7 @@
     .main-content{
         margin: 20px;
     }
-    main nav .menu--active{
+    .menu--active{
         display: inline;
     }
     .slide .banner-description{
@@ -37,5 +37,8 @@
     }
     a[active]{
         font-weight: bold;
+    }
+    .search #search-box{
+        margin-top: 30px;
     }
   }
