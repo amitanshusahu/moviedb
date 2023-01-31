@@ -1,5 +1,5 @@
 # moviedb - ui design to code
-`html`  `css`  `js`
+`html`  `css`  `js` `responsive`
 
 🔴 [view live](https://amitanshusahu.github.io/moviedb/)
 
